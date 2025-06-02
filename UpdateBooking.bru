@@ -1,0 +1,31 @@
+meta {
+  name: UpdateBooking
+  type: http
+  seq: 3
+}
+
+put {
+  url: https://restful-booker.herokuapp.com/booking/2654
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Accept: application/json
+  Cookie: token=00d281e04252c61
+}
+
+body:json {
+  {
+      "firstname" : "Amod",
+      "lastname" : "Mahajan",
+      "totalprice" : 111,
+      "depositpaid" : true,
+      "bookingdates" : {
+          "checkin" : "2018-01-01",
+          "checkout" : "2019-01-01"
+      },
+      "additionalneeds" : "Breakfast"
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: DeleteBooking
+  type: http
+  seq: 6
+}
+
+delete {
+  url: https://restful-booker.herokuapp.com/booking/1256
+  body: none
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+  Cookie: token=f83d481ca546031
+}
